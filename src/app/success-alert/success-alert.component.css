@@ -1,0 +1,32 @@
+p {
+    color: green;
+    text-align: center;
+    padding: 20px;
+}
+
+.success {
+    text-transform: uppercase;
+    font: bold 2vmax/.8 Open Sans, Impact;
+    display: table;
+  
+}
+.success:hover {
+    margin: auto;
+    background: linear-gradient( rgb(231, 220, 222) , rgb(175, 170, 171)) white no-repeat 0 0;
+    background-size: 0 100%;
+    animation: stripes 2s linear 1 forwards;
+  }
+  .success:hover .success{
+    mix-blend-mode: multiply;
+  }
+  
+  @keyframes stripes {
+    to {
+      background-size:100% 100%;
+    }
+  }
+  
+  body {
+    float:left;
+    height: 100%;
+  }
